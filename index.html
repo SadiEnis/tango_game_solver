@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tango Puzzle Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Tango Puzzle Solver</h1>
+        </header>
+
+        <div class="content">            <!-- Grid Size Selection -->
+            <div class="section">
+                <h3>Grid Size</h3>
+                <div class="size-selector">
+                    <button class="size-btn active" onclick="setGridSize(6)">6x6</button>
+                </div>
+            </div>
+
+            <!-- Puzzle Input Grid -->
+            <div class="section">
+                <h3>Puzzle Input</h3>
+                <div id="input-grid" class="grid"></div>
+            </div>
+
+            <!-- Controls -->
+            <div class="section">
+                <div class="controls">
+                    <button id="solve-btn" onclick="solvePuzzle()">🎯 Solve Puzzle</button>
+                    <button id="clear-btn" onclick="clearGrid()">🗑️ Clear Grid</button>
+                    <button id="sample-btn" onclick="loadSample()">📝 Load Sample</button>
+                </div>
+            </div>
+
+            <!-- Solution Display -->
+            <div class="section" id="solution-section" style="display: none;">
+                <h3>Solution</h3>
+                <div id="solution-grid" class="grid readonly"></div>
+            </div>            <!-- Log Output -->
+            <div class="section">
+                <h3 class="collapsible">📊 Algorithm Log <span id="log-toggle">▼</span></h3>
+                <div id="log-section" class="log-section collapsed">
+                    <div id="log-output" class="log-output"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.dart.js"></script>
+</body>
+</html>
