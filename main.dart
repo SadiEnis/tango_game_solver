@@ -1,4 +1,4 @@
-// Tango Bulmacası Çözemleyen Yapay Zeka Algoritması
+// Tango Bulmacası Çözümleyen Yapay Zeka Algoritması
 
 // ** Not: main.dart.(js - .js.deps - .js.map) dosyaları web için gerekli olan dosyalardır.
 // Bunlar Dart kodunun JavaScript'e derlenmiş hali. Bu dosyalar olmadan web uygulaması çalışmaz.
